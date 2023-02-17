@@ -55,8 +55,9 @@
     <section class="hero">
 <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="title-button">Замовити послугу</button>
+        <button data-modal-open type="button" class="title-button">Замовити послугу</button>
     </div>
+
     </section>
 
     <!--Особливості-->
@@ -118,16 +119,43 @@
         <h2 class="activity-title">Чим ми займаємося</h2>
         <ul class="activity-list list">
             <li  class="item">
+
+            <div class="activity-thumb">
             <img src="./images/1img.jpg" alt="Набір коду на клавіатурі"
             width="370">
+
+            <div class="activity-thumb-text">
+            <p class="activity-text">Десктопні додатки</p>
+            </div>
+
+            </div>
+
             </li>
             <li class="item">
+
+        <div class="activity-thumb">
             <img src="./images/2img.jpg" alt="Мобільний телефон і комп'ютер"
             width="370">
+
+            <div class="activity-thumb-text">
+<p class="activity-text">Мобільні додатки</p>
+        </div>
+
+        </div>
+
             </li>
             <li class="item">
+
+            <div class="activity-thumb">
             <img src="./images/3img.jpg" alt="Планшет з вибором кольорів"
             width="370">
+
+            <div class="activity-thumb-text">
+<p class="activity-text">Дизайнерські рішення</p>
+            </div>
+
+            </div>
+
             </li>
         </ul>
         </div>
@@ -416,5 +444,19 @@
         </div>
         </div>
 </footer>
+
+<!--Modal-->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="close" width="18" height="18">
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<script src="./js/modal.js"></script>
+
 </body>
 </html>
